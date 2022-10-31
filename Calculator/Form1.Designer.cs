@@ -315,7 +315,6 @@ namespace Calculator
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
