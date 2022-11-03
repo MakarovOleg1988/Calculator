@@ -1,35 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
 {
     public partial class Form1 : Form
     {
-        double _firstOperand;
-        double _secondOperand;
-        String _operationPerformed = "";
+        private double _firstOperand;
+        private double _secondOperand;
+        private String _operationPerformed = "";
 
+        #region
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_Result_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
 
         private void button_dot_Click(object sender, EventArgs e)
         {
@@ -60,8 +45,8 @@ namespace Calculator
         {
             Button _button = (Button)sender;
             _operationPerformed = _button.Text;
-            label2.Text = textBox_Result.Text;
-            label1.Text = _operationPerformed;
+            label1.Text = textBox_Result.Text;
+            label2.Text = _operationPerformed;
             textBox_Result.Text = "0";
         }
 
@@ -69,7 +54,9 @@ namespace Calculator
         {
             textBox_Result.Clear();
             textBox_Result.Text = "0";
-            
+            label1.Text = "__";
+            label2.Text = "__";
+            label3.Text = "__";
         }
 
         private void ButtonRemoveRow(object sender, EventArgs e)
@@ -80,22 +67,29 @@ namespace Calculator
 
         private void Operation_Equels(object sender, EventArgs e)
         {
-            _firstOperand = Convert.ToDouble(label2.Text);
+            label3.Text = textBox_Result.Text;
+            label4.Text = "=";
+
+            _firstOperand = Convert.ToDouble(label1.Text);
             _secondOperand = Convert.ToDouble(textBox_Result.Text);
 
             switch (_operationPerformed)
             {
                 case "+":
                     textBox_Result.Text = (_firstOperand + _secondOperand).ToString();
+                    label5.Text = textBox_Result.Text;
                     break;
                 case "-":
                     textBox_Result.Text = (_firstOperand - _secondOperand).ToString();
+                    label5.Text = textBox_Result.Text;
                     break;
                 case "*":
                     textBox_Result.Text = (_firstOperand * _secondOperand).ToString();
+                    label5.Text = textBox_Result.Text;
                     break;
                 case "/":
                     textBox_Result.Text = (_firstOperand / _secondOperand).ToString();
+                    label5.Text = textBox_Result.Text;
                     break;  
             }
         }
