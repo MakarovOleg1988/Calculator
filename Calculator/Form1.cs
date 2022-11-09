@@ -54,9 +54,11 @@ namespace Calculator
         {
             textBox_Result.Clear();
             textBox_Result.Text = "0";
-            label1.Text = "__";
-            label2.Text = "__";
-            label3.Text = "__";
+            label1.Text = default;
+            label2.Text = default;
+            label3.Text = default;
+            label4.Text = default;
+            label5.Text = default;
         }
 
         private void ButtonRemoveRow(object sender, EventArgs e)

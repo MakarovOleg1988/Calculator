@@ -237,9 +237,8 @@ namespace Calculator
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(70, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 21);
+            this.label1.Size = new System.Drawing.Size(0, 21);
             this.label1.TabIndex = 16;
-            this.label1.Text = "__";
             // 
             // buttonNull
             // 
@@ -259,7 +258,7 @@ namespace Calculator
             this.button_dot.Name = "button_dot";
             this.button_dot.Size = new System.Drawing.Size(75, 75);
             this.button_dot.TabIndex = 18;
-            this.button_dot.Text = ".";
+            this.button_dot.Text = ",";
             this.button_dot.UseVisualStyleBackColor = true;
             this.button_dot.Click += new System.EventHandler(this.button_dot_Click);
             // 
@@ -280,9 +279,8 @@ namespace Calculator
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(140, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 21);
+            this.label2.Size = new System.Drawing.Size(0, 21);
             this.label2.TabIndex = 20;
-            this.label2.Text = "__";
             // 
             // label3
             // 
@@ -290,9 +288,8 @@ namespace Calculator
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(210, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 21);
+            this.label3.Size = new System.Drawing.Size(0, 21);
             this.label3.TabIndex = 21;
-            this.label3.Text = "__";
             // 
             // label4
             // 
@@ -300,9 +297,8 @@ namespace Calculator
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(280, 60);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 21);
+            this.label4.Size = new System.Drawing.Size(0, 21);
             this.label4.TabIndex = 22;
-            this.label4.Text = "__";
             // 
             // label5
             // 
@@ -310,9 +306,8 @@ namespace Calculator
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(350, 60);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 21);
+            this.label5.Size = new System.Drawing.Size(0, 21);
             this.label5.TabIndex = 23;
-            this.label5.Text = "__";
             // 
             // Form1
             // 
